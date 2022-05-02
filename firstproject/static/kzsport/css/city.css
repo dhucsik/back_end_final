@@ -1,0 +1,17 @@
+.intro{
+    font-size: 72px;
+    text-align: center;
+}
+.city{
+    max-width: 800px;
+    margin: 6px;
+    border: 2px solid;
+}
+.city p, .city h4{
+    padding-left: 5px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

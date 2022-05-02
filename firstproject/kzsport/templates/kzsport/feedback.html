@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Feedbacks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color:#b8ece7;">
+<nav class="navbar navbar-light" style="background-color:#0011ff;">
+    <a href="{% url 'admin:index' %}" class = 'navbar-link btn-lg' style="margin-left: 300px ; background-color:#33ff66;color:#000000;">Admin</a>
+    <a href="{% url 'upload-book' %}" class="navbar-link btn-lg" style="margin-left: auto; margin-right: auto; background-color:#33ff66;color:#000000;">Upload Feedback</a>
+    <a href="{% url 'home' %}" class="navbar-link btn-lg" style="margin-right: 300px; background-color:#33ff66;color:#000000;">Main page</a>
+</nav>
+<br>
+{% block content %}
+<div class="card-columns">
+    {% for book in shelf %}
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ book.picture.url }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ book.name }}</h5>
+    <h5 class="card-title">{{ book.rate }}/10</h5>
+    <p class="card-text">{{ book.feedback }}</p>
+   <div class="card-footer bg-transparent border-dark">
+   <p class="card-title">{{book.author}}, {{ book.age }} years old.</p>
+   <p class="card-title">{{book.time}}</p>
+   <p class="card-title">{{ book.email }}</p>
+   <center>
+       <a href="update/{{book.id}}" class="btn btn-warning" id = '{{book.id}}'>edit</a>
+       <a href="delete/{{book.id}}" class="btn btn-danger" id = '{{book.id}}'>delete</a>
+    </center>
+    </div>
+  </div>
+</div>
+    {% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>

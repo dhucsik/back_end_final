@@ -1,0 +1,41 @@
+body{
+    background-size:cover;
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+}
+
+.contentArea{
+    width: 100%;
+    position: relative;
+}
+
+.contentArea h1{
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.contentDesc{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentDesc p{
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+    line-height: 30px;
+}
+
+.footer{
+    color: white;
+}
+
+.link{
+    color: white;
+}
+

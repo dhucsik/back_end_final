@@ -1,0 +1,14 @@
+{% for food in foods %}
+    <div class="row">
+        <div class="column">
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{food.title}}</h5>
+                    <p class="card-text">{{food.full_text}}</p>
+                    <a href="https://weproject.media/articles/detail/7-restoranov-natsionalnoy-kazakhskoy-kukhni-v-almaty/" class="btn">Go to Cafe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}

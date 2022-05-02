@@ -1,0 +1,24 @@
+.intro{
+    font-size: 72px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sportsman{
+    max-width: 800px;
+    margin: 10px;
+    box-shadow: 0 4px 6px #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sportsman p, .sportsman h4{
+    padding-left: 5px;
+}
+
+.sportsman h4{
+    padding-top: 5px;
+}

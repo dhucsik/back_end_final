@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 65px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 40px;
+    padding-right: 30px;
+}
+
+.card-body {
+    height: 600px;
+}
+
+.card-text {
+    height: 450px;
+}
+
+.name {
+    text-align: center;
+}
+
+.btn {
+    color: red;
+}
