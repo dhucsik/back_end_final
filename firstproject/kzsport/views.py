@@ -72,21 +72,12 @@ def signin(request):
         if sign.is_valid():
             sign.save()
             send_mail("Web programming:back end", "My content",
-              "200103092@stu.sdu.edu.kz",
+              "",
                [request.POST.get('email')],
-               fail_silently=False, html_message="<b>Bold text</b><i> Italic text</i>"
+               fail_silently=False, html_message="<p>Hello, {}, it's our project for INF232, so please welcome!</p>".format(request.POST.get('username'))
                 )
             return redirect('home')
         else:
             return HttpResponse("""your form is wrong, reload on <a href = "">reload</a>""")
     else:
         return render(request, 'kzsport/login.html', {'sign_form':sign})
-
-
-def send_message(request):
-    send_mail("Web programming:back end", "My content",
-               "200103092@stu.sdu.edu.kz",
-               ["200103092@stu.sdu.edu.kz", "galikhandias@gmail.com"],
-               fail_silently=False, html_message="<b>Bold text</b><i> Italic text</i>"
-               )
-    return render(request, 'kzsport/email.html')

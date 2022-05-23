@@ -13,5 +13,4 @@ urlpatterns = [
     path('feedback/update/<int:book_id>', views.update_book),
     path('feedback/delete/<int:book_id>', views.delete_book),
     path('login/', views.signin, name = "login"),
-    path('send/', views.send_message)
     ]
