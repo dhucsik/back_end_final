@@ -17,17 +17,21 @@ Web site about Kazakhstan
 
 About last requirement if you want it work then you need to write your email and password in settings.py file. Also you have to turn on less secure access in your email. 
 
-## How to start
+## Installation
 
-Download all files then
+1. Clone this repository: 
 
-Command prompt
+```bash
+git clone git@github.com:dhucsik/back_end_final
+```
 
-```cmd
-path> cd project_venv
-path\project_venv> cd Scripts 
-path\project_venv\Scripts> activate.bat
+2. Create virutal environment and install django 4.0.2
 
+3. All requirements for pip in requirements.txt file
+
+4. cd to firstproject then 
+
+```
 path> cd firstproject
 path\firstproject> python manage.py runserver
 ```
