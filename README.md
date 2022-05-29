@@ -4,6 +4,8 @@ Web site about Kazakhstan
 
 - Built in Python version 3.10.0, Django version 4.0.2
 
+![alt text](https://github.com/dhucsik/back_end_final/blob/main/main_page.png?raw=true)
+
 ## Requirements of project 
 
 - Number of templates must be at least 7.
@@ -25,7 +27,7 @@ About last requirement if you want it work then you need to write your email and
 git clone git@github.com:dhucsik/back_end_final
 ```
 
-2. Create virutal environment and install django 4.0.2
+2. Create virutal environment and install django
 
 3. All requirements for pip in requirements.txt file
 
