@@ -7,7 +7,7 @@ Django==3.2.13
 filelock==3.4.0
 idna==3.3
 Pillow==9.0.1
-pipenv==2021.11.23
+pipenv==2022.1.8
 platformdirs==2.4.0
 pytz==2021.3
 requests==2.26.0
