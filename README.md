@@ -31,7 +31,7 @@ git clone git@github.com:dhucsik/back_end_final
 
 3. All requirements for pip in requirements.txt file
 
-4. cd to firstproject then 
+4.
 
 ```
 path> cd firstproject
